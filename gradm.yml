@@ -1,0 +1,19 @@
+versions:
+  bouncyCastle: "1.71"
+  kotlinx:
+    datetime: "0.3.3"
+
+repositories:
+  mavenCentral:
+    url: https://repo1.maven.org/maven2
+
+dependencies:
+  mavenCentral:
+    org.bouncycastle:
+      bcprov-jdk18on:
+        alias: bouncyCastle.provider.jdk18on
+        version: ${versions.bouncyCastle}
+    org.jetbrains.kotlinx:
+      kotlinx-datetime:
+        alias: kotlinx.datetime
+        version: ${versions.kotlinx.datetime}
